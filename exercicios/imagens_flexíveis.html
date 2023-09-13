@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinâmicas</title>
+</head>
+<body>
+
+    <h1>Esta imagem abaixo se ajusta conforme a necessidade do navegador</h1>
+
+    <picture>
+
+        <source media="(max-width: 650px)" srcset="imagens/trem-300x400.jpg" type="image/jpeg">
+        <source media="(max-width: 950px)" srcset="imagens/trem-600x400.jpg" type="image/jpeg">
+        <source media="(max-width: 1400px)" srcset="imagens/trem-900x600.jpg" type="image/jpeg">
+        <img src="imagens/Trem-1350x900.jpg" alt="Garota na estação" type="image/jpeg">
+
+    </picture>
+        
+</body>
+</html>

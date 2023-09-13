@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.div1{
+    padding: 50px;
+    background-color: yellow;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+ 
+}
+.div2{
+    padding: 50px;
+    background-color: yellowgreen;
+    display: inline-block;
+    
+}
