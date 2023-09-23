@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de tabela DEF</title>
+
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-image: radial-gradient( black, white);
+        }
+
+        table {
+            width: 600px;
+            color: yellow;
+        }
+
+        td {
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid black;
+            padding: 80px;
+            box-shadow: 1px 1px 10px yellow;
+        }
+
+        .col:hover {
+            background-image: linear-gradient(to top, salmon, grey);
+        }
+        .row:hover {
+            background-image: linear-gradient(to top,blue, yellow);
+        }
+        .norm:hover {
+            background-image: linear-gradient(to top, black 45%,  white);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <TD colspan="4" class="col">A</TD> 
+            <TD rowspan="4" class="row">B</TD>
+        </tr>
+
+        <tr>
+            <TD rowspan="4" class="row">C</TD>
+            <TD class="norm">D</TD>
+            <TD class="norm">E</TD>
+            <TD class="norm">F</TD>
+        </tr>
+
+        <tr>
+            <TD class="norm">G</TD> 
+            <TD class="norm">H</TD> 
+            <TD class="norm">I</TD> 
+        </tr>
+
+        <tr>
+            <TD class="norm">J</TD>
+            <TD class="norm">L</TD>
+            <TD class="norm">M</TD>
+        </tr>
+
+        <tr>
+            <TD colspan="4" class="col">N</TD>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>

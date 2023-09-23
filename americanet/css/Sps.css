@@ -21,16 +21,23 @@ body {
 }
 
 table {
+    position: relative;
     margin: auto;
     width: 500px;
     border: 1px solid blue;
     padding: 10px;
     border-collapse: collapse;
     color: white;
-    box-shadow: 1px 1px 5px black inset;
+    box-shadow: 2px 2px 5px black inset;
+
 }
 caption {
     padding-top: 15px;
+}
+thead {
+    background-color: #0367A6;
+    position: sticky;
+    top: -1px;
 }
 .conteudo > tr:hover {
     background-color: #e2b9a1;
@@ -39,7 +46,6 @@ caption {
 }
 td {
     padding: 10px 0px 5px 0px;
-    border: 1px solid blue ;
 }
 th{
     padding: 10px;
