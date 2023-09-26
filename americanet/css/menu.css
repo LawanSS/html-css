@@ -5,37 +5,53 @@
     margin: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: auto;
+    background-image: linear-gradient(-45deg , #F25C05 20%, #0367A6 45%, #F2F2F2 95% );
+    background-attachment: fixed;
+}
+
+main { 
+    margin: auto;
+    padding-top: 100px;
+}
+
 .logo {
     margin: auto;
     max-width: 100%;
     padding: 20px;
 }
-header > h1 {
-    padding-bottom: 30px;
-}
-nav {
-    max-width: 800px;
+
+.links > a {
+    display: block;
     padding: 10px;
-     
-}
-nav > a {
     text-decoration: none;
     color: black;
-    padding: 10px;
-    border-radius: 5px;
-    
-}
-nav > a:hover {
-    background-color: #F25C05;
-    transition-duration: 1s;
-    color: white;
-}
-
-
-body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(-45deg , #F25C05 20%, #0367A6 45%, #F2F2F2 95% );
+    width: 300px;
     margin: auto;
-    background-attachment: fixed;
+   
 }
+.links > a:hover {
+    background-color: #F25C05;
+    color: white;
+    transition-duration: 1s;
+    border-radius: 40px;
+
+}
+
+.links {
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    padding-top: 30px;
+    background-image: linear-gradient(-45deg , #786257, #236590, #0667A4, #3986B7, #438CBA  );
+    box-shadow: 1px 1px 10px black inset;
+    margin: auto;
+}
+
