@@ -10,9 +10,11 @@
     max-width: 100%;
     padding: 20px;
 }
-header > h1 {
+
+h1 {
     padding-bottom: 30px;
 }
+
 nav {
     max-width: 800px;
     padding: 10px;
@@ -30,6 +32,7 @@ nav > a:hover {
     transition-duration: 1s;
     color: white;
 }
+
 
 
 body {
