@@ -11,12 +11,18 @@
         }
 
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
         }
         td, th {
             border: 1px solid black;
@@ -31,6 +37,10 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
         }
 
 

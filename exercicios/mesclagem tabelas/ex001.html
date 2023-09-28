@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de tabela DEF</title>
+
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            position: relative;
+            width: 90vh;
+            height: 100vh;
+            margin: auto;
+            background-image: radial-gradient(black, white);
+            
+        }
+
+        table {
+            position: absolute;
+            width: 600px;
+            color: yellow;
+            top: 1%;
+        }
+        td {
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid black;
+            padding: 80px;
+            box-shadow: 1px 1px 10px yellow;
+        }
+
+        
+        .row:hover {
+            background-image: linear-gradient(to top, green , purple);
+            color: white;
+        }
+        .col:hover {
+            background-image: linear-gradient(to top, orange , red);
+            color: white;
+        }
+        .norm:hover {
+            background-image: linear-gradient(to top, black 45%, white);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <table> 
+ 
+                
+                <tr>
+                    <td class="norm">1</td>
+                    <td class="norm">2</td>
+                    <td rowspan="2" class="row">3</td>
+                    <td class="norm">4</td>
+                </tr>
+                <tr>
+                    <td class="norm">5</td>
+                    <td class="norm">6</td>
+                    <td class="norm">7</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="col">8</td>
+                    <td class="norm">9</td>
+                
+                </tr>
+                <tr>
+                    <td rowspan="2" class="row">10</td>
+                    <td colspan="2" class="col">11</td>
+                    <td class="norm">12</td>
+                </tr>
+                <tr>
+                    <td class="norm">13</td>
+                    <td class="norm">14</td>
+                    <td class="norm">15</td>
+                </tr>
+
+    </table>
+    
+</body>
+</html>
