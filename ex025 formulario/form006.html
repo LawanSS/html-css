@@ -9,7 +9,7 @@
 
     <h1>Formulario de exemplo</h1>
 
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
 
         <p>
             <label for="cor">Cor:</label>
@@ -18,7 +18,12 @@
 
         <p>
             <label for="nivel">Nivel de satisfação</label>
-            <input type="range" name="nivel" id="nivel">
+            <input type="range" name="nivel" id="nivel" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <label for="foto">Foto de Perfil</label>
+            <input type="file" name="foto" id="foto">
         </p>
 
 
